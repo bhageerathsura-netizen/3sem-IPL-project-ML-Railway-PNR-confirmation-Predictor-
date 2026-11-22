@@ -1,0 +1,82 @@
+{
+    "dataset_size": 18000,
+    "train_samples": 14400,
+    "test_samples": 3600,
+    "random_forest": {
+        "accuracy": 0.8172,
+        "precision": 0.7781,
+        "recall": 0.708,
+        "f1_score": 0.7414,
+        "roc_auc": 0.889,
+        "confusion_matrix": {
+            "true_negative": 1999,
+            "false_positive": 269,
+            "false_negative": 389,
+            "true_positive": 943
+        }
+    },
+    "logistic_regression": {
+        "accuracy": 0.8228,
+        "roc_auc": 0.8926,
+        "f1_score": 0.7539
+    },
+    "top_features": [
+        {
+            "feature": "wl_per_day",
+            "importance": 0.18783549994323934
+        },
+        {
+            "feature": "expected_clearance_ratio",
+            "importance": 0.1795397497785132
+        },
+        {
+            "feature": "log_current_wl",
+            "importance": 0.092802216758768
+        },
+        {
+            "feature": "current_wl",
+            "importance": 0.08332314045008678
+        },
+        {
+            "feature": "lead_time_sqrt",
+            "importance": 0.08139077139738908
+        },
+        {
+            "feature": "lead_time_days",
+            "importance": 0.07807842564131813
+        },
+        {
+            "feature": "quota_GNWL",
+            "importance": 0.07288678494068393
+        },
+        {
+            "feature": "quota_RLWL",
+            "importance": 0.030040834347954855
+        },
+        {
+            "feature": "is_festive_season",
+            "importance": 0.026066022028628084
+        },
+        {
+            "feature": "quota_PQWL",
+            "importance": 0.02442930391472152
+        }
+    ],
+    "classes": [
+        "DROPPED",
+        "CONFIRMED"
+    ],
+    "quotas_supported": [
+        "GNWL",
+        "RLWL",
+        "PQWL"
+    ],
+    "coach_classes_supported": [
+        "1A",
+        "2A",
+        "3A",
+        "3E",
+        "SL",
+        "CC"
+    ]
+}
